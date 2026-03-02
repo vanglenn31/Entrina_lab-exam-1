@@ -28,29 +28,40 @@ if (isset($_POST['update'])) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Edit Student</title></head>
+<head><meta charset="utf-8"><title>Edit Student</title>
+<link rel="stylesheet" href="../styles/pages.css">
+</head>
 <body>
+  <div class="flex justify-center">
+  <div class="size-fit w-lg rounded-3xl shadow-lg text-lg text-black flex flex-col text-center items-center addForm m-10">
+      <h2 class="text-4xl font-serif font-bold text-center">Edit Student</h2>
+      <p style="color:red;"><?php echo $message; ?></p>
+ 
+      <form method="post">
+          <label>Student ID*</label><br>
+        <input class="w-sm" type="text" name="student_id" value="<?php echo $client['student_id']; ?>"><br><br>
 
- 
-<h2>Edit Student</h2>
-<p style="color:red;"><?php echo $message; ?></p>
- 
-<form method="post">
-    <label>Student ID*</label><br>
-  <input type="text" name="student_id" value="<?php echo $client['student_id']; ?>"><br><br>
+        <label>Full Name*</label><br>
+        <input class="w-sm" type="text" name="full_name" value="<?php echo $client['full_name']; ?>"><br><br>
+      
+        <label>Email*</label><br>
+        <input class="w-sm" type="text" name="email" value="<?php echo $client['email']; ?>"><br><br>
+      
+        <label>Course</label><br>
+        <input class="w-sm" type="text" name="course" value="<?php echo $client['course']; ?>"><br><br>
 
-  <label>Full Name*</label><br>
-  <input type="text" name="full_name" value="<?php echo $client['full_name']; ?>"><br><br>
- 
-  <label>Email*</label><br>
-  <input type="text" name="email" value="<?php echo $client['email']; ?>"><br><br>
- 
-  <label>Course</label><br>
-  <input type="text" name="course" value="<?php echo $client['course']; ?>"><br><br>
-
- 
-  <button type="submit" name="update">Update</button>
-</form>
+        <div class="flex gap-6 mt-4 mb-10" >
+          <div class="flex flex-col w-1/2">
+            <button type="submit" name="update">Update</button>
+          </div>
+          <div class="flex flex-col w-1/2">
+            <button class="cancel" ><a href="../index.php">Cancel</a></button>
+          </div>
+          </div>
+      </form>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </body>
 </html>
  

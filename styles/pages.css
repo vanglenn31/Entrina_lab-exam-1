@@ -1,3 +1,41 @@
 body {
-    background-color: red;
+    background-color: rgb(226, 226, 233);
+}
+.addform {
+     background-color: rgb(241, 241, 241);
+    padding: 3rem;
+}
+input {
+    border: 2px solid #120461;
+    border-radius: 0.4rem;
+    height: 3rem;
+    margin-block-end: 5px;
+    text-align: center;
+}
+button {
+    border: 2px solid #120461;
+    background-color: #120461;
+    color: rgb(226, 226, 233);
+    border-radius: 10px;
+    height: 3em;
+    padding: 0;
+    
+}
+.cancel {
+    border: 2px solid #120461;
+    background-color:  rgb(241, 241, 241);
+    color: #120461;
+}
+.cancel:hover {
+    color: rgb(241, 241, 241);
+}
+
+button:hover {
+    transition: ease-out 300ms;
+    background-color: #4933c3;
+    border: #4933c3;
+}
+button:active {
+    background-color: rgb(246, 246, 255);
+    color:  #28168a;
 }

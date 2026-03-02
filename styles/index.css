@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(226, 226, 233);
+}
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+}
+.container {
+    width: 80%;
+    margin:auto;
+    padding: 2rem;
+    background-color: rgb(246, 246, 255);
+    /* height: auto; */
+    border-radius: 20px;
+}
+button {
+    border: 2px solid #120461;
+    background-color: #120461;
+    color: rgb(226, 226, 233);
+    border-radius: 10px;
+    height: 3em;
+    padding: 0;
+    
+}
+button:hover {
+    transition: ease-out 300ms;
+    background-color: #4933c3;
+    border: #4933c3;
+}
+button:active {
+    background-color: rgb(246, 246, 255);
+    color:  #28168a;
+}
+.show-data {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.show-data th {
+  background-color: #221584;
+  color: #ffffff;
+  text-align: left;
+  padding: 12px;
+  font-weight: 600;
+}
+
+
+.show-data td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.show-data tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+.show-data tr:hover {
+  background-color: #f1f1f1;
+  transition: 0.2s ease;
+}
+
+.edit-btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  background-color: #120461;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  text-decoration: underline;
+  width: 3rem;
+}
+
+.edit-btn:hover {
+  background-color: #4933c3;
+  color:rgb(246, 246, 255);
+}
+.addClientbtn {
+    background-color: #120461;
+    color: rgb(246, 246, 255);
+    width:10rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border:2px solid #120461;
+    text-align: center;
+    margin-inline: auto;
+    margin-block-start: 4rem;
+}
+.addClientbtn:hover {
+    transition: linear 300ms;
+    background-color: #4933c3;
+    border:2px solid #4933c3;
+}
+.addClientbtn:active {
+    background-color: rgb(246, 246, 255);
+    color:  #28168a;
+}
+.deactivate-btn {
+  text-decoration: none;
+  padding: 6px 12px;
+  background-color: #b00020; /* red */
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 5rem;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+.deactivate-btn:hover {
+  background-color: #d32f2f;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.deactivate-btn:active {
+  background-color: #7f0000;
+}
+.logout {
+  position: fixed;     
+    bottom: 20px;         
+    right: 20px;          
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+a{
+    color: #f1f1f1;
+    text-decoration: none;
+}

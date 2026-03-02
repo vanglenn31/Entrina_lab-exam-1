@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS student (
   student_id VARCHAR(11) UNIQUE NOT NULL,
   full_name VARCHAR(150) NOT NULL,
   email VARCHAR(150) NOT NULL,
-  course VARCHAR(50)
+  course VARCHAR(50),
+  is_active INT default(1)
 );
  
